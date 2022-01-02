@@ -239,7 +239,7 @@ end)
 
 -- Commands
 
-QBCore.Commands.Add('911e', 'EMS Report', {{name='message', help='Message to be sent'}}, false, function(source, args)
+QBCore.Commands.Add('1990', 'EMS Report', {{name='message', help='Message to be sent'}}, false, function(source, args)
 	local src = source
 	if args[1] then message = table.concat(args, " ") else message = 'Civilian Call' end
     local ped = GetPlayerPed(src)
